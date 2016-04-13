@@ -2,6 +2,10 @@
   <footer class="footer">
     <small>
       Copyright &copy; <a href="http://google.com">Jake</a>
+
+      <%- require 'open-uri' %>
+      <%= remote_ip = open('http://whatismyip.akamai.com').read %>
+
     </small>
     <nav>
     <ul><li><%= link_to "About", about_path %></li></ul>
