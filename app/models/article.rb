@@ -9,6 +9,6 @@ class Article < ActiveRecord::Base
             length: {minimum: 3, maximum: 500}
 
   validates :user_id,
-            presence: true #requires that everytime an article is created, a user_id is associated
+            presence: true #requires that every time an article is created, a user_id is associated
 
 end
